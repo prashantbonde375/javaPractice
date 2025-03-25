@@ -39,11 +39,12 @@ public class ListProgramForDuplicate {
         // Using Set to remove duplicates while maintaining order
         List<String> uniqListOfFruites = new ArrayList<>(new LinkedHashSet<>(fruites));
 
+        //using stream conver to set from list
+        List<String> setUsing = fruites.stream().collect(Collectors.toSet()).stream().collect(Collectors.toList());
+
+
         for(String uniList : uniqListOfFruites){
             System.out.println(uniList);
         }
-
-        
-
     }
 }
