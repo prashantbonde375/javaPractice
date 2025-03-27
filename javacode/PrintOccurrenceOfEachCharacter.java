@@ -31,6 +31,7 @@ public class PrintOccurrenceOfEachCharacter {
 
         // Print the occurrences of each character
         System.out.println("Character Occurrences:");
+
         for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
