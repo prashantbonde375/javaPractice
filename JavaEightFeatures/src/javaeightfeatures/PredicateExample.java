@@ -18,5 +18,15 @@ public class PredicateExample {
         // to check String length() is less than or greater than
         Predicate<String> str = s -> s.length() > 5;
         System.out.println("The length of string is getter:- " + str.test("Prashant"));
+
+        //Predicate with String array example
+        String[] arry = { "Prashant", "Bonde", "ketan", "Patil", "Diga" };
+        Predicate<String> s = i -> i.length() % 2 == 0;
+
+        for (String s1 : arry) {
+            if (s.test(s1)) {
+                System.out.println(s1);
+            }
+        }
     }
 }
