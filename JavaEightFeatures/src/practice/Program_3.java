@@ -8,8 +8,7 @@ public class Program_3 {
 
         // find second highest from sentence
 
-        String str = "I am prashantrrr and i am working as a java developer";
-
+        String str = "i ii iii iiii iiiii iiiiii iiiiiii";
         String str1 = Arrays.stream(str.split(" ")).sorted(Comparator.comparing(String::length).reversed()).skip(1).findFirst().get();
 
         System.out.println(str1);
