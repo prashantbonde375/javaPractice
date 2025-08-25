@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Fourteen_Program {
     public static void main(String[] args) {
-        //given string array print only digit from string array.
+        // given string array print only digit from string array.
 
         String[] str = { "abcd", "123", "xyz", "765", "987" };
 

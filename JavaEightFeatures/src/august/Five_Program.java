@@ -11,7 +11,7 @@ public class Five_Program {
         // given sentence find occurrence of word
         String str = "I am Prashant i am prashant";
 
-        Map<String, Long> map = Arrays.stream(str.split(" ")).map(String::toLowerCase )
+        Map<String, Long> map = Arrays.stream(str.split(" ")).map(String::toLowerCase)
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println(map);
